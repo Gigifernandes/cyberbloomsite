@@ -1,0 +1,273 @@
+*{
+    max-width: 100vw;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000; 
+}
+body{
+    font-family:cursive;
+    
+}
+
+.circle-item {
+    text-align: center;
+}
+
+.circle-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.circle-item p {
+
+    font-size: 24px;
+    color: #7b22e0;
+}
+.titulo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.titulo p{
+    font-size: 30px;
+    color: #7b22e0;
+}
+.meio {
+    position: relative;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    text-align: center;
+}
+
+
+.itens{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding-inline: 20px;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+.item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--background);
+
+}
+.item img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    right: -20%;
+    bottom: -100%;
+    transform: translateY(300%);
+    z-index: 99;
+    animation: subir 0.8s ease forwards;
+}
+.item .title{
+    font-size: 5rem;
+    color: #ffffff;
+    text-align: center;
+    transform: translateY(300%);
+    animation: subir 0.5s ease forwards;
+}
+.itens video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -3;
+    opacity: 1;
+}
+.aparecerFilme {
+    animation: aparecerFilme 1s ease forwards;
+}
+.desvanecerFilme {
+    animation: desvanecerFilme 2.7s ease forwards;
+}
+@keyframes subir {
+    0% {
+        transform: translateY(300%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes desvanecerFilme {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes aparecerFilme {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.arrow {
+    background-color: transparent;
+}
+#prev, #next{
+    width: 50px;
+    height: 50px;
+    background-color:  #7b22e0;
+    border: 1px solid #7b22e0;
+    color: #f1eaea;
+    font-size: x-large;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 50%;
+}
+
+#prev{
+    left: 30px;
+}
+#next{
+    right: 30px;
+}
+
+@keyframes toActive{
+    from {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.area-de-cima {
+    width: 100%;
+    height: 40%;
+}
+.area-de-baixo {
+    position: relative;
+    height: 50%;
+}
+.videosando{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 950px;
+    overflow: hidden;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2)
+}
+.videosando video{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    position: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+
+.textos {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.textos h3 {
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+.textos p {
+    font-size: 20px;
+}
+.blocopreto{
+    box-sizing: border-box;
+    padding-inline: 7%;
+    width: 80%;
+    height: 100%;
+    gap: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0 ,0, 0.7);
+
+}
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+section span {
+    color: #ffffff;
+    margin-right: 10px;
+}
+.separar-blocos {
+    width: 100%;
+    justify-content: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.separar-blocos img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bloco {
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    
+}
+.bloco h3 {
+    text-align: justify;
+    font-size: 140%;
+    color: white;
+}
+.bloco p {
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
